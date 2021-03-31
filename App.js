@@ -5,6 +5,7 @@ const multer = require("multer");
 const webp = require("webp-converter");
 
 const app = express();
+const PORT = process.env.PORT || 4000;
 
 app.set("view engine", "ejs");
 
@@ -38,6 +39,6 @@ app.post("/", (req, res) => {
   });
 });
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
   console.log("App is listening on Port 4000");
 });
