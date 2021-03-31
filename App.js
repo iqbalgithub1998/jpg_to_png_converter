@@ -5,7 +5,7 @@ const multer = require("multer");
 const webp = require("webp-converter");
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT;
 
 app.set("view engine", "ejs");
 
